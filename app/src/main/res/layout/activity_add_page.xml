@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPage"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etAddPageTitle"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="30sp"
+        android:maxLength="25"/>
+
+    <EditText
+        android:id="@+id/etAddPageDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="30sp"
+        android:maxLength="25"/>
+
+    <Button
+        android:id="@+id/btnAddPageAdd"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="ADD TASK"/>
+
+    <Button
+        android:id="@+id/btnAddPageCancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CANCEL"/>
+
+</LinearLayout>
