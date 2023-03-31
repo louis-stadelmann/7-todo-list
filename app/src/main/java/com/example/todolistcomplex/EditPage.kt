@@ -25,8 +25,8 @@ class EditPage : AppCompatActivity() {
     }
 
     fun manageIntentValue() {
-        var returnedItem = intent.getSerializableExtra("ITEMS")
-        var returnedPosition = intent.getIntExtra("position", 0)
+        val returnedItem = intent.getSerializableExtra("ITEMS")
+        val returnedPosition = intent.getIntExtra("position", 0)
 
         if (returnedItem == null) {
             items = arrayListOf<ListItemModel>()
@@ -81,7 +81,7 @@ class EditPage : AppCompatActivity() {
         val button = findViewById<Button>(R.id.btnEditPageDelete)
 
         button.setOnClickListener {
-            items = ArrayList(items).apply { removeAt(position) }
+            items.removeAt(position)
 
             gotoMainActivity()
         }

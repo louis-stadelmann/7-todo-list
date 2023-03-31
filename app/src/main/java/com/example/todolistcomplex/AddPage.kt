@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.todolistcomplex.databinding.ActivityAddPageBinding
 import com.example.todolistcomplex.model.ListItemModel
 
 class AddPage : AppCompatActivity() {

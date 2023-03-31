@@ -1,6 +1,7 @@
 package com.example.todolistcomplex.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.todolistcomplex.AddPage
 import com.example.todolistcomplex.R
 import com.example.todolistcomplex.model.ListItemModel
 
@@ -31,7 +33,6 @@ class ListItemAdapter(var context : Context, var items: ArrayList<ListItemModel>
 
         val textView1 = rowView.findViewById<TextView>(R.id.tvTitle)
         val textView2 = rowView.findViewById<TextView>(R.id.tvDescription)
-        val btn = rowView.findViewById<Button>(R.id.btnItemList)
 
         val data = getItem(position)
 
